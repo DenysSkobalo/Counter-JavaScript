@@ -5,6 +5,8 @@ let count = 0;
 // Метод forEach() виконує зазначену функцію один раз для кожного елемента в масиві
 btns.forEach((btn) => {
 	btn.addEventListener('click', (i) => {
+		// event.currentTarget используется, когда один и тот же обработчик события присваивается нескольким элементам
+		// classList возвращает псевдомассив DOMTokenList, содержащий все классы элемента.
 		const styles = i.currentTarget.classList;
 
 		if (styles.contains('increase')) {

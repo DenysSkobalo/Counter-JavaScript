@@ -1,6 +1,6 @@
-const increment = document.getElementById('plus');
-const decrement =document.getElementById('minus');
-const counter = document.getElementById('output');
+const increment = document.getElementById('increase');
+const decrement =document.getElementById('decrease');
+const counter = document.getElementById('counter');
 
 const state = {
     count: 0,
