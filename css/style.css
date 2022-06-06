@@ -2,11 +2,14 @@
 
 :root {
     --whitegray: #ddd;
+    --grey: grey;
+    --black: #000000;
 }
 
-body {
+* {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -25,24 +28,24 @@ h1 {
     
 }
 
-#output {
-    font-size: 54px;    
+#counter {
+    font-size: 54px; 
+    color: var(--grey);   
 }
 
-#plus {
-    font-size: 32px;
-    padding: 3px 12px 3px 12px;    
-}
-
-#minus {
+.btn {
     font-size: 32px;
     padding: 3px 18px 3px 18px;    
 }
 
 button {
     margin: 70px 40px 0 40px;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-.active-plus {
-    color: green;
+button:hover {
+    color: var(--whitegray);
+    background-color: var(--black);
+    transition: all .5s ease;
 }
